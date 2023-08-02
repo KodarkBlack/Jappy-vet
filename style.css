@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&display=swap');
+
+.navbar {
+    background-color: #FEFAF6;
+
+}
+
+.main-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    padding: 5px;
+    justify-content: space-evenly;
+    background-color: #FEFAF6;
+}
+
+.main-text {
+    width: 90%;
+    margin-top: 10%;
+}
+
+.main-text h3 {
+    font-family: Poppins;
+    font-size: 65px;
+}
+
+.main-text p {
+    font-family: Poppins;
+    font-size: 20px;
+}
+
+.Contact-us {
+    background-color: #EC735F;
+    padding: 10px;
+    font-family: Poppins;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+}
+
+.main-img {
+    margin-top: 5%;
+}
+
+.section-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10%;
+}
+
+.service-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.our-services {
+    padding: 5%;
+}
+
+.our-services-btn {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    gap: 5%;
+}
+
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    justify-content: space-between;
+}
+
+.about-text {
+    width: 50%;
+}
