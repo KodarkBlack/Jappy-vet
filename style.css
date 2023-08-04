@@ -1,32 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&display=swap');
 
+.bx-envelope {
+    background-color: black;
+    border-radius: 50%;
+    border: none;
+    padding: 5%;
+    color: #FEFAF6;
+    margin: 5%;
+    font-size: 40px;
+}
+
+
+.bx-time {
+    background-color: black;
+    border-radius: 50%;
+    border: none;
+    padding: 5%;
+    color: #FEFAF6;
+    margin: 5%;
+    font-size: 40px;
+}
+
+
+.bx-current-location {
+    background-color: black;
+    border-radius: 50%;
+    border: none;
+    padding: 5%;
+    color: #FEFAF6;
+    margin: 5%;
+    font-size: 40px;
+}
+
+/*  */
+
+
 .navbar {
     background-color: #FEFAF6;
+    padding: 3% 5%;
 
 }
 
 .main-cont {
     display: flex;
-    flex-wrap: wrap;
     gap: 10%;
-    padding: 5px;
+    padding: 5%;
     justify-content: space-evenly;
     background-color: #FEFAF6;
 }
 
+
+
 .main-text {
-    width: 90%;
+    width: 100%;
     margin-top: 10%;
 }
 
 .main-text h3 {
     font-family: Poppins;
-    font-size: 65px;
+    font-size: 60px;
+    text-align: left;
 }
 
 .main-text p {
     font-family: Poppins;
     font-size: 20px;
+    text-align: left;
+}
+
+.main-contact-us {
+    background-color: #EC735F;
+    padding: 10px;
+    font-family: Poppins;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
 }
 
 .Contact-us {
@@ -38,8 +86,10 @@
     border-radius: 10px;
 }
 
-.main-img {
-    margin-top: 5%;
+
+
+.main-img img {
+    width: 100%;
 }
 
 .section-cont {
@@ -75,4 +125,40 @@
 
 .about-text {
     width: 50%;
+}
+
+
+/* THE MOBILE FIX */
+
+
+@media screen and (max-width: 580px) {
+    .main-cont {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .main-text {
+        justify-content: center;
+    }
+
+    .main-text h3 {
+        font-family: Poppins;
+        font-size: 40px;
+    }
+
+    .main-contact-us {
+        background-color: #EC735F;
+        padding: 10px;
+        font-family: Poppins;
+        font-size: 25px;
+        border: none;
+        border-radius: 10px;
+        width: 100%;
+    }
+    
+    .main-img img {
+        padding: 6%;
+    }
 }
