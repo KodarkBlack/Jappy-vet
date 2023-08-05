@@ -100,14 +100,32 @@
 }
 
 .service-cont {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    width: screen;
+    display: grid;
+    gap: 5%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    overflow-x: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: center;
 }
 
 .our-services {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    width: 100%;
+    background-color: #F6F8E2;
+}
+
+.our-service-card {
+    width: 100%;
+    height: inherit;
+    border-radius: 20px;
+    border: 10px;
+    background-color: #555A5A;
     padding: 5%;
 }
+
 
 .our-services-btn {
     display: flex;
@@ -160,5 +178,9 @@
     
     .main-img img {
         padding: 6%;
+    }
+
+    .our-services {
+        display: block;
     }
 }
