@@ -97,6 +97,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10%;
+    background-color: #FEFAF6;
 }
 
 .service-cont {
@@ -114,7 +115,6 @@
     justify-content: space-between;
     padding: 5%;
     width: 100%;
-    background-color: #F6F8E2;
     gap: 10%;
 }
 
@@ -137,13 +137,75 @@
 
 .about-us {
     display: flex;
-    flex-wrap: wrap;
     padding: 5%;
-    justify-content: space-between;
+    gap: 5%;
+    background-color: #FEFAF6;
 }
 
-.about-text {
-    width: 50%;
+.about-us-images img  {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.about-text h3 {
+    font-family: Poppins, sans-serif;
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 53px;
+    font-style: normal;
+    color: #2c2524;
+}
+
+.about-text p {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    font-style: normal;
+    color: #817d7d;
+}
+
+.about-ul {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 34px;
+    font-style: normal;
+    color: #2c2524;
+}
+
+.review-section h3 {
+    font-family: Poppins, sans-serif;
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 53px;
+    font-style: normal;
+    color: #2c2524;
+    text-align: center;
+}
+
+.review-section p {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    font-style: normal;
+    color: #817d7d;
+    text-align: center;
+}
+
+.review-img {
+    width: 40%;
+}
+
+.carousel-inner {
+    padding: 5%;
+}
+
+.carousel-item-part {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
@@ -182,6 +244,19 @@
     }
 
     .our-services {
+        display: block;
+    }
+
+    .about-us {
+        display: block;
+        flex-direction: column-reverse;
+    }
+
+    .review-img {
+        width: 100%;
+    }
+
+    .carousel-item-part {
         display: block;
     }
 }
