@@ -286,8 +286,22 @@
 
 .footer-section {
     padding: 5%;
-    justify-content: center;
     background-color: #FEFAF6;
+}
+
+.footer-section h3 {
+    text-align: center;
+    font-size: Poppins;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.footer-section p {
+    text-align: center;
+}
+
+.jappy h3 {
+    justify-content: center;
 }
 
 
