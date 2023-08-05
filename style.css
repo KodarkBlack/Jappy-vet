@@ -285,6 +285,8 @@
 }
 
 .footer-section {
+    display: flex;
+    flex-wrap: wrap;
     padding: 5%;
     justify-content: center;
     background-color: #FEFAF6;
