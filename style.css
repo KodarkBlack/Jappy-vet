@@ -284,6 +284,16 @@
     width: 50%;
 }
 
+.footer-section {
+    padding: 5%;
+    justify-content: center;
+    background-color: #FEFAF6;
+}
+
+.footer-ul {
+    list-style: none;
+}
+
 
 /* THE MOBILE FIX */
 
@@ -313,6 +323,7 @@
         border: none;
         border-radius: 10px;
         width: 100%;
+        margin: 1%;
     }
     
     .main-img img {
@@ -343,4 +354,5 @@
     .appt-image {
         width: 100%;
     }
+
 }
