@@ -285,15 +285,9 @@
 }
 
 .footer-section {
-    display: flex;
-    flex-wrap: wrap;
     padding: 5%;
     justify-content: center;
     background-color: #FEFAF6;
-}
-
-.footer-ul {
-    list-style: none;
 }
 
 
@@ -326,6 +320,7 @@
         border-radius: 10px;
         width: 100%;
         margin: 1%;
+        color: #FFFFFF;
     }
     
     .main-img img {
