@@ -147,6 +147,16 @@
     border-radius: 10px;
 }
 
+.Contact-us:hover {
+    background-color: #41766C;
+    padding: 5px;
+    font-family: Poppins;
+    font-size: 25px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    transition: 0.2s;
+} 
+
 
 
 .main-img img {
@@ -305,6 +315,46 @@
 }
 
 
+/* AUTH SECTION STYLE */
+
+.auth-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: screen;
+    height: inherit;
+    padding: 5%;
+    justify-content: space-between;
+    background-color: #FFFAF6;
+}
+
+.auth-section img {
+    width: 40%;
+    border-radius: 20px;
+}
+
+.signup-form {
+    border: #EC735F;
+    background-color: #F2F0EF;
+    padding: 5%;
+    width: 50%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.signup-form input {
+    width: 100%;
+    margin-top: 8%;
+    border-color: #EC735F;
+    padding: 10px;
+    font-family: Poppins;
+    font-size: 25px;
+    border-radius: 10px;
+    width: 100%;
+    margin: 1%;
+    color: #EC735F;
+}
+
+
 /* THE MOBILE FIX */
 
 
@@ -336,6 +386,12 @@
         margin: 1%;
         color: #FFFFFF;
     }
+
+    .main-contact-us:hover {
+        background-color: #FFCA0F;
+        color: #2c2524;
+        transition: 0.5s;
+    }
     
     .main-img img {
         padding: 6%;
@@ -364,6 +420,21 @@
 
     .appt-image {
         width: 100%;
+    }
+
+    /* AUTH SECTION */
+
+    .auth-section img {
+        display: none;
+    }
+
+    .signup-form {
+        border: #EC735F;
+        background-image: url(assets/cat.jpeg);
+        padding: 5%;
+        width: 100%;
+        border-radius: 20px;
+        margin-top: 10%;
     }
 
 }
