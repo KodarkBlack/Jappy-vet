@@ -8,6 +8,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
@@ -66,7 +67,7 @@
     </nav>
 
 
-    <main class="main-cont">
+    <main data-aos="fade-down" class="main-cont">
         <div class="main-text">
             <h3>A veterinary you and your little friend can trust</h3>
             <p>
@@ -76,17 +77,19 @@
             </p>
             <button class="main-contact-us">Contact Us</button>
         </div>
-        <div class="main-img">
-          <img src="/assets/Home.png" alt="">
+        <div data-aos="fade-left">
+          <div class="main-img">
+            <img data-aos="fade-down-left" src="/assets/Home.png" alt="">
+          </div>
         </div>
     </main>
 
 
 
 
-    <section class="section-cont">
+    <section data-aos="fade-down" class="section-cont">
         <div class="">
-            <i class='bx bx-envelope'></i>
+            <i data-aos="fade-down-left" class='bx bx-envelope'></i>
             <h3>Contact us</h3>
             <a href="mailto:Ibukunolufisayo8888@gmail.com">
               <button class="main-contact-us">Mail</button>
@@ -99,22 +102,22 @@
         </div>
 
         <div class="">
-          <i class='bx bx-time'></i>
+          <i data-aos="fade-down-left" class='bx bx-time'></i>
           <h3>Open Hours</h3>
           <p>Mon-Fri: <span>8:00 AM to 5:00 PM </span></p>
           <p>Saturday: <span>9:00 AM to 3:00 PM </span></p>
           <p>Sunday: <span>Strictly Appt</span></p>
         </div>
 
-        <div class="">
-            <i class='bx bx-current-location'></i>
-            <h3>Location</h3>
-                <p>We are everywhere for your convinence</p>
+        <div data-aos="fade-down-left" class="">
+          <i class='bx bx-current-location'></i>
+          <h3>Location</h3>
+          <p>We are everywhere for your convinence</p>
         </div>
     </section>
 
 
-    <section class="our-services">
+    <section data-aos="fade-down" class="our-services">
         <div>
             <h3>Our Services</h3>
             <h5>Taking care ofr the pet the right way</h5>
@@ -167,7 +170,7 @@
         </div>
     </section>
 
-    <section class="about-us">
+    <section data-aos="fade-down-left" class="about-us">
         <div class="about-us-images">
             <img src="/assets/catperson.jpeg" alt="">
         </div>
@@ -184,7 +187,7 @@
         </div>
     </section>
 
-    <div class="review-section">
+    <div data-aos="fade-down" class="review-section">
       <h3>What our clients says about us</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies felis feugiat elementum gravida. Facilisis libero aliquam curabitur.
@@ -194,11 +197,11 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="carousel-item-part">
-              <img src="/assets/doggy.jpeg" class="review-img" alt="...">
+              <img data-aos="fade-down-left" src="/assets/doggy.jpeg" class="review-img" alt="...">
               <div>
                 <h3>A TEAM OF VET YOU CAN TRUST</h3>
                 <p>Our team of experienced veterinarians and compassionate support staff is passionate about animals and committed to delivering the best possible care for your furry friends. Get to know our team through their bios and photos on our website.</p>
-                <p>Tunji <span>750 Owner</span></p>
+                <p>Teejay <span>750 Owner</span></p>
               </div>
             </div>
           </div>
@@ -226,17 +229,17 @@
       </div>
     </div>
 
-    <section class="appt-section">
+    <section data-aos="fade-down" class="appt-section">
       <div class="appt-text">
         <h3>Schdule your appointments today</h3>
         <p>"Easy and Quick Appointments for Your Pet's Convenience"</p>
         <button class="main-contact-us">Book Appt</button>
       </div>
 
-      <img class="appt-image" src="assets/pugdog.png" alt="">
+      <img data-aos="fade-down-left" class="appt-image" src="assets/pugdog.png" alt="">
     </section>
 
-    <footer class="footer-section">
+    <footer data-aos="fade-down" class="footer-section">
       <h3>Jappy Vet</h3>
       <p>Where Pets' Health is Our Priority!</p>
 
@@ -251,5 +254,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
