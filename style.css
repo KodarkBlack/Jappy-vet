@@ -198,12 +198,20 @@
     padding: 5%;
 }
 
+.our-service-card p {
+    color: #FFFFFF;
+}
+
 
 .our-services-btn {
-    display: flex;
     justify-content: center;
     padding: 5%;
     gap: 5%;
+}
+
+.our-services-btn button {
+    width: 100%;
+    margin-bottom: 2%;
 }
 
 .about-us {
