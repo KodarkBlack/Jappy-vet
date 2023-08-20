@@ -214,6 +214,10 @@
     margin-bottom: 2%;
 }
 
+.our-service-card-btn {
+    
+}
+
 .about-us {
     display: flex;
     padding: 5%;
@@ -323,7 +327,7 @@
 }
 
 
-/* AUTH SECTION STYLE */
+/* AUTH SECTION STYLE =================================*/
 
 .auth-section {
     display: flex;
