@@ -32,10 +32,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     text: "Good To Go",
                     confirmButtonText: "Ok"
                 });
+                window.location.href = "product.html";
 
-                setTimeout(() => {
-                    location.href = "auth.html";
-                }, 5000);
+                // setTimeout(() => {
+                //     location.href = "product.html";
+                // }, 5000);
             } else {
                 let errorMessage = "Registration Unsuccessful";
                 if (result.message) {
