@@ -215,7 +215,7 @@
 }
 
 .our-service-card-btn {
-    
+
 }
 
 .about-us {
@@ -329,9 +329,16 @@
 
 /* AUTH SECTION STYLE =================================*/
 
+#sign-btn {
+    width: 100%;
+    padding: 2%;
+    border-color: #EC735F;
+    border-radius: 10px;
+}
+
 .auth-section {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: screen;
     height: inherit;
     padding: 5%;
@@ -365,6 +372,71 @@
     margin: 1%;
     color: #EC735F;
 }
+
+/* log in */
+
+.login-form {
+    border: #EC735F;
+    background-color: #F2F0EF;
+    padding: 5%;
+    width: 50%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.login-form input {
+    width: 100%;
+    margin-top: 8%;
+    border-color: #EC735F;
+    padding: 10px;
+    font-family: Poppins;
+    font-size: 25px;
+    border-radius: 10px;
+    width: 100%;
+    margin: 1%;
+    color: #EC735F;
+}
+
+/* main */
+
+.login-switch {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+
+}
+
+  
+.login-switch .radio {
+    flex: 1 1 auto;
+    text-align: center;
+}
+  
+.login-switch .radio input {
+    display: none;
+}
+  
+.login-switch .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+    -webkit-text-fill-color: #A5DBDD;
+}
+  
+.login-switch .radio input:checked + .name {
+    background-color: black;
+    font-weight: 600;
+}
+
+
 
 
 /* THE MOBILE FIX */
@@ -441,6 +513,15 @@
     }
 
     .signup-form {
+        border: #EC735F;
+        background-image: url(assets/cat.jpeg);
+        padding: 5%;
+        width: 100%;
+        border-radius: 20px;
+        margin-top: 10%;
+    }
+
+    .login-form {
         border: #EC735F;
         background-image: url(assets/cat.jpeg);
         padding: 5%;
