@@ -343,12 +343,18 @@
     height: inherit;
     padding: 5%;
     justify-content: space-between;
-    background-color: #FFFAF6;
+    background: linear-gradient(to right bottom, #756575, #66a6ff);
+
 }
 
 .auth-section img {
     width: 40%;
     border-radius: 20px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .signup-form {
@@ -358,6 +364,20 @@
     width: 50%;
     border-radius: 20px;
     text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.alert {
+    width: 100%;
+    background: greenyellow;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    display: none;
 }
 
 .signup-form input {
@@ -395,6 +415,21 @@
     width: 100%;
     margin: 1%;
     color: #EC735F;
+}
+
+#sign-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 /* main */

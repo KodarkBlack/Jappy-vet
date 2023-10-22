@@ -1,4 +1,4 @@
-// // SIGN UP FUNCTION
+// SIGN UP FUNCTION
 // document.addEventListener("DOMContentLoaded", () => {
 //     const signBtn = document.getElementById('sign-btn');
 //     const signupRadio = document.getElementById('signup-page');
@@ -35,14 +35,14 @@
 //                     text: "Redirecting to login",
 //                     confirmButtonText: "Ok"
 //                 });
-//                 // window.location.href = "product.html";
+//                 window.location.href = "product.html";
 //                 document.getElementById("signup-content").style.display = "none";
 //                 document.getElementById("login-content").style.display = "block";
 //                 signinRadio.checked = true;
 
-//                 // setTimeout(() => {
-//                 //     location.href = "product.html";
-//                 // }, 5000);
+//                 setTimeout(() => {
+//                     location.href = "product.html";
+//                 }, 5000);
 //             } else {
 //                 let errorMessage = "Registration Unsuccessful";
 //                 if (result.message) {
@@ -302,56 +302,58 @@
 //     });
 // });
 
-const { Client } = Appwrite;
+// const { Client } = Appwrite;
 
-const appwrite = new Client();
+// const appwrite = new Client();
 
-appwrite
-  .setEndpoint('https://cloud.appwrite.io/v1') // Replace with your Appwrite endpoint
-  .setProject('Jappy'); // Replace with your Appwrite project ID
+// appwrite
+//   .setEndpoint('https://cloud.appwrite.io/v1') // Replace with your Appwrite endpoint
+//   .setProject('Jappy'); // Replace with your Appwrite project ID
 
 
-  const signBtn = document.getElementById('sign-btn');
+//   const signBtn = document.getElementById('sign-btn');
 
-signBtn.addEventListener("click", async (e) => {
-    e.preventDefault();
+// signBtn.addEventListener("click", async (e) => {
+//     e.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    const confirmPassword = document.getElementById("confirmPassword").value;
+//     const name = document.getElementById("name").value;
+//     const email = document.getElementById("email").value;
+//     const password = document.getElementById("password").value;
+//     const confirmPassword = document.getElementById("confirmPassword").value;
 
-    // Register the user using Appwrite
-    try {
-        const user = await appwrite.account.create(email, password, name, confirmPassword);
-        console.log(user); // User registration successful
+//     // Register the user using Appwrite
+//     try {
+//         const user = await appwrite.account.create(email, password, name, confirmPassword);
+//         console.log(user); // User registration successful
         
-        // Optionally, you can automatically sign the user in after registration
-        const session = await appwrite.account.createSession(email, password);
-        console.log(session);
+//         // Optionally, you can automatically sign the user in after registration
+//         const session = await appwrite.account.createSession(email, password);
+//         console.log(session);
         
-        Swal.fire({
-            icon: "success",
-            text: "Redirecting to login",
-            confirmButtonText: "Ok"
-        });
-        signupContent.style.display = "none";
-        loginContent.style.display = "block";
-        signinRadio.checked = true;
-    } catch (error) {
-        console.error(error); // Handle registration error
-        let errorMessage = "Registration Unsuccessful";
-        if (error.response && error.response.message) {
-            errorMessage = error.response.message;
-        }
-        Swal.fire({
-            icon: "error",
-            text: errorMessage,
-            confirmButtonText: "Ok"
-        });
-    } finally {
-        signBtn.innerText = "Submit";
-        signBtn.classList.remove("pulse");
-    }
-});
+//         Swal.fire({
+//             icon: "success",
+//             text: "Redirecting to login",
+//             confirmButtonText: "Ok"
+//         });
+//         signupContent.style.display = "none";
+//         loginContent.style.display = "block";
+//         signinRadio.checked = true;
+//     } catch (error) {
+//         console.error(error); // Handle registration error
+//         let errorMessage = "Registration Unsuccessful";
+//         if (error.response && error.response.message) {
+//             errorMessage = error.response.message;
+//         }
+//         Swal.fire({
+//             icon: "error",
+//             text: errorMessage,
+//             confirmButtonText: "Ok"
+//         });
+//     } finally {
+//         signBtn.innerText = "Submit";
+//         signBtn.classList.remove("pulse");
+//     }
+// });
+
+
 
