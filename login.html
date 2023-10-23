@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up || Sign In</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
 </head>
-
-
 <body>
     <nav class="navbar navbar-expand-lg navbar-light justify-center">
         <a class="navbar-brand" href="index.html">Jappy Vet</a>
@@ -48,48 +46,31 @@
     </nav>
 
 
-    <main class="login-switch">
-        <label class="radio">
-          <input type="radio" name="radio" id="signup-page" checked="">
-          <span class="name">Sign Up</span>
-      </label>
-      <label class="radio">
-          <input type="radio" name="radio" id="signin-page">
-          <a href="login.html" class="name">Sign In</a>
-      </label>
-    </main>
-
-
-    <section id="signup-content" class="auth-section">
-        <img src="assets/cat.jpeg" alt="" loading="lazy">
-
-        <form onsubmit="signup(event)"  id="signup-form" class="signup-form">
-            <p class="alert">Sign Up Successful</p>
-            <h3>Sign Up</h3>
-            <input type="text" placeholder="FullName" id="name">
-            <input type="email" placeholder="Email" id="email">
-            <input type="password" placeholder="Johndoe@gmail.com" id="password">
-            <button id="sign-btn" type="submit">Submit</button>
+    <section id="login-content" class="auth-section">
+        <form class="login-form" onsubmit="login(event)">
+          <h3>Sign In</h3>
+          <input type="email" placeholder="Johndoe@gmail.com" id="email">
+          <input type="password" placeholder="password" id="password">
+          <button id="sign-btn" type="submit">Log In</button>
         </form>
+  
+        <img src="assets/cat.jpeg" alt="" loading="lazy">
     </section>
 
-   
-
-
     <footer data-aos="fade-down" class="footer-section">
-      <h3>Jappy Vet</h3>
-      <p>Where Pets' Health is Our Priority!</p>
-
-      <p>Powered by
-        <span>
-          <a href="http://incorporated.netlify.app">Incorporated Tech</a>
-        </span>
-      </p>
+        <h3>Jappy Vet</h3>
+        <p>Where Pets' Health is Our Priority!</p>
+  
+        <p>Powered by
+          <span>
+            <a href="http://incorporated.netlify.app">Incorporated Tech</a>
+          </span>
+        </p>
     </footer>
     
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    <script type="module" src="auth.js"></script>
+    <script type="module" src="login.js"></script>
 </body>
 </html>

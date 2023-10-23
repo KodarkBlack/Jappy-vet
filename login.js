@@ -1,9 +1,6 @@
-
-
-
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
-  import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js";
+  import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-analytics.js";
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
@@ -27,37 +24,29 @@
 
 //   getting all the form object
 
-let name = document.getElementById('name')
 let email = document.getElementById('email')
 let password = document.getElementById('password')
 
-window.signup = function(e){
-  e.preventDefault()
+window.login = function(e){
+    e.preventDefault();
 
-  let obj = {
-    name: name.value,
-    email: email.value,
-    password: password.value
-  }
-  createUserWithEmailAndPassword(auth, obj.email, obj.password)
+    const obj = {
+        email : email.value,
+        password : password.value
+    };
 
-  .then(function(success){
+    signInWithEmailAndPassword(auth, obj.email, obj.password)
+    .then(function(success){
+        window.location.replace('product.html')
+        console.log(user.uid)
+        alert("Login Successful")
+    })
 
-    document.querySelector(".alert").style.display = "block"
+    .catch(function(error){
+        alert("login error" + err)
+    })
 
-    setTimeout(() => (
-        document.querySelector('.alert').style.display = 'none'
-  ),3000)
-
-  alert("Account created successfully")
-
-  })
-  
-
-  .catch(function(error){
-    alert("error" + error.message)
-  })
-
-  
+    console.log(obj)
 }
+
 
