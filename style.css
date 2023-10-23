@@ -432,45 +432,6 @@
     }
 }
 
-/* main */
-
-.login-switch {
-    display: flex;
-    justify-content: center;
-    margin: 2%;
-    box-sizing: border-box;
-    border-radius: 0.5rem;
-
-}
-
-  
-.login-switch .radio {
-    flex: 1 1 auto;
-    text-align: center;
-}
-  
-.login-switch .radio input {
-    display: none;
-}
-  
-.login-switch .radio .name {
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.5rem;
-    border: none;
-    padding: .5rem 0;
-    color: rgba(51, 65, 85, 1);
-    transition: all .15s ease-in-out;
-    -webkit-text-fill-color: #A5DBDD;
-}
-  
-.login-switch .radio input:checked + .name {
-    background-color: black;
-    font-weight: 600;
-}
-
 
 
 
